@@ -13,7 +13,7 @@ background_mode = 2
 sky = SubResource("Sky_edr0k")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gaqdb"]
-albedo_color = Color(1.44392e-06, 0.623494, 0.815508, 1)
+albedo_color = Color(0.0831103, 0.694736, 0.801315, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_jgjqi"]
 material = SubResource("StandardMaterial3D_gaqdb")

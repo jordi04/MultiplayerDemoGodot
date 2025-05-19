@@ -18,3 +18,17 @@ func _ready() -> void:
 	peer.create_server(PORT_NUMBER)
 	
 	multiplayer.multiplayer_peer = peer
+
+
+func _on_join_button_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_create_button_pressed() -> void:
+	print("create")
+	pass # Replace with function body.
+
+
+func _on_cummy_pressed() -> void:
+	print("cummy")
+	pass # Replace with function body.

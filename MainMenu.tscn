@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk56fpb0d45ws"]
+
+[ext_resource type="Script" uid="uid://csvrhv5erryc0" path="res://steamManager.gd" id="1_i26rj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i26rj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_eiy7p"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MainMenuManager" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_i26rj")
+
+[node name="Control" type="Control" parent="MainMenuManager"]
+layout_mode = 1
+anchor_right = 47.975
+anchor_bottom = 27.0
+offset_right = -0.00012207
+offset_bottom = -0.00012207
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenuManager/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.375
+anchor_top = 0.025
+anchor_right = 0.625
+anchor_bottom = 0.972
+offset_left = -0.625061
+offset_right = -0.375
+offset_bottom = 0.23999
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainMenuTitle" type="Label" parent="MainMenuManager/Control/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "This is the Main Menu Title"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_i26rj")
+text = "Main Menu"
+label_settings = SubResource("LabelSettings_eiy7p")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainMenuManager/Control/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="CreateButton" type="Button" parent="MainMenuManager/Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Create Game
+"
+
+[node name="JoinButton" type="Button" parent="MainMenuManager/Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Join Game"
